@@ -2,7 +2,7 @@
 
 ## Description
 
-A way to run the CLIPS rules engine in Docker.
+A way to run the [CLIPS](https://www.clipsrules.net/) rules engine in Docker.
 It is available on Docker Hub here:
 [https://hub.docker.com/repository/docker/mrryanjohnston/clips/general](https://hub.docker.com/repository/docker/mrryanjohnston/clips/general)
 
