@@ -14,16 +14,25 @@ or run a local file.
 ### REPL
 
 ```
-docker run --rm -it mrryanjohnston/clips
+$ docker run --rm -it mrryanjohnston/clips
+         CLIPS (6.4.2 1/14/25)
+CLIPS> 
 ```
 
 ### Local File
 
-Let's say you have a file `program.bat` in your current directory.
+Let's say you have a file `program.bat` in your current directory:
+
+```clips
+(println "Hello, world!")
+(exit)
+```
+
 To run it with CLIPS, you can do:
 
 ```
-docker run --rm -it \
+$ docker run --rm -it \
   -v "$PWD/program.bat":/program.bat \
   mrryanjohnston/clips clips -f2 /program.bat
+Hello, world!
 ```
